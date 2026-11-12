@@ -1,3 +1,4 @@
+
 # Student Grade Calculator
 
 A Python desktop application for recording assessment marks, validating student records, calculating weighted results, and reviewing records through a Tkinter interface.
@@ -9,7 +10,7 @@ This is a cleaned portfolio copy of a coursework project. The assessment-specifi
 - Create, view, search, update, and delete student records in a CSV file.
 - Validate required fields and mark ranges from 0 to 100.
 - Calculate a weighted final grade and classify the result as Distinction, Pass, or Fail.
-- Run the calculation unit tests with Python's built-in `unittest` framework.
+- Run the existing calculation unit test with Python’s built-in `unittest` framework.
 
 ## Grade calculation
 
@@ -39,13 +40,13 @@ python3 main.py
 
 On first launch, the application creates `students.csv` with fictional demo records. The CSV is local runtime data and is excluded from this repository. Keep real student information out of public repositories.
 
-Run the existing calculation tests with:
+Run the existing calculation test with:
 
 ```bash
-python3 -m unittest discover -s tests -v
+python3 -m unittest test_grade_calculator -v
 ```
 
-The private recovery archive recorded nine existing calculation tests as passing on 12 November 2026. They were not rerun while preparing this portfolio copy; GUI behaviour has not been reverified here.
+The private recovery archive recorded nine calculation checks as passing on 12 November 2026. They were not rerun while preparing this portfolio copy; GUI behaviour has not been reverified here.
 
 ## Project structure
 
@@ -54,7 +55,7 @@ The private recovery archive recorded nine existing calculation tests as passing
 | `main.py` | Tkinter desktop interface and application navigation |
 | `data_module.py` | CSV persistence, input validation, search, update, and deletion operations |
 | `grade_calculator.py` | Mark validation, weighted grade calculation, and result classification |
-| `tests/test_grade_calculator.py` | Existing unit tests for grade calculations |
+| `test_grade_calculator.py` | Existing unit test for grade calculations |
 
 ## Provenance and scope
 
